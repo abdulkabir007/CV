@@ -410,10 +410,18 @@
         <div class="content">
 		
 			<div class="btn-container">
-                 <a href="Ahmed-Kabir-Alam-Resume-UAE.pdf" class="btn" download>
+                 <a href="Ahmed-Kabir-Alam-Resume-UAE.pdf" class="btn" onclick="gtag('event', 'cv_download', {
+					 'event_category': 'CV',
+					 'event_label': 'PDF Download',
+					 'value': 1
+				   });" download>
                     <i class="fas fa-download"></i> Download Full CV (PDF)
                 </a>
-                <a href="Ahmed-Kabir-Alam-Resume-UAE.pdf" class="btn btn-secondary" target="_blank">
+                <a href="Ahmed-Kabir-Alam-Resume-UAE.pdf" class="btn btn-secondary" target="_blank" onclick="gtag('event', 'cv_view_online', {
+					 'event_category': 'CV',
+					 'event_label': 'Online View',
+					 'value': 1
+				   });">
                     <i class="fas fa-eye"></i> View Online
                 </a>
             </div>
@@ -534,3 +542,4 @@
 </body>
 
 </html>
+
